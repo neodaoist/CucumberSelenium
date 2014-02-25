@@ -1,6 +1,21 @@
-*.class
+# IDEA Ignores
+*.iml
+*.ipr
+*.iws
+.idea/
+local.properties
+*.log
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# Generic ignores
+target/
+out/
+
+# Javadoc
+javadoc/
+
+# Merge tool
+*.orig
+
+# Gradle
+.gradle
+/build

@@ -9,6 +9,7 @@ local.properties
 # Generic ignores
 target/
 out/
+lib/
 
 # Javadoc
 javadoc/

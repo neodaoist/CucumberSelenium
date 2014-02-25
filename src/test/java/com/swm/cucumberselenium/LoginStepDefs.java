@@ -4,7 +4,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class UserStepDefs {
+import static org.junit.Assert.assertTrue;
+
+public class LoginStepDefs {
 
     Navigation navigation = new Navigation();
 
@@ -20,8 +22,10 @@ public class UserStepDefs {
     }
 
     @Then("^I should see that I logged in '<status>'$")
-    public void I_should_see_that_I_logged_in_status_() throws Throwable {
+    public void I_should_see_that_I_logged_in_status_(String status) throws Throwable {
         System.out.println("Entering: I should see that ");
+        assertTrue(false);
+        navigation.then_I_login(status);
     }
 
 }

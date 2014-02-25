@@ -1,9 +1,12 @@
 package com.swm.cucumberselenium;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.UnreachableBrowserException;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BrowserDriver {
 
@@ -19,6 +22,19 @@ public class BrowserDriver {
             }
         }
         return driver;
+    }
+
+    public static WebElement waitForElement(WebElement elementToWaitFor){
+        return waitForElement(elementToWaitFor, null);
+    }
+
+    public static WebElement waitForElement(WebElement elementToWaitFor, Integer waitTimeInSeconds) {
+        if (waitTimeInSeconds == null) {
+            waitTimeInSeconds = 10;
+        }
+
+        WebDriverWait wait = new WebDriverWait(getCurrentDriver(), waitTimeInSeconds);
+        return wait.until(ExpectedConditions.visibilityOf(elementToWaitFor));
     }
 
     private static class BrowserCleanup implements Runnable {

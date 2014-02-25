@@ -9,5 +9,5 @@ import org.junit.runner.RunWith;
         format = {"json:target/integration_cucumber.json"},
         tags = {"@run"}
 )
-public class UserTests {
+public class LoginTest {
 }

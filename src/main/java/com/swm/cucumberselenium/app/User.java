@@ -1,4 +1,4 @@
-package com.swm.cucumberselenium; 
+package com.swm.cucumberselenium.app;
 
 public class User {
 

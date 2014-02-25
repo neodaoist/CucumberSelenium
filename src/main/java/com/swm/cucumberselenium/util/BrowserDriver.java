@@ -1,4 +1,4 @@
-package com.swm.cucumberselenium;
+package com.swm.cucumberselenium.util;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

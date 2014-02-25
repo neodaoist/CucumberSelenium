@@ -1,6 +1,6 @@
 Feature: User logs in
 
-  @run
+  @login
   Scenario Outline: Login success & failure
     Given I navigate to the application
     When I try to login with '<type>' credentials

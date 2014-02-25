@@ -3,7 +3,9 @@ package com.swm.cucumberselenium.constants;
 public enum CredentialsType {
 
     VALID(new String[] { "valid", "correct" }),
-    INVALID(new String[] {"invalid" });
+    INVALID_USERNAME(new String[] { "invalid_username" }),
+    INVALID_PASSWORD(new String[] { "invalid_password" });
+
 
     private String[] aliases;
 

@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @Cucumber.Options(
         features = "src/test/resources/User",
         format = {"json:target/integration_cucumber.json"},
-        tags = {"@run"}
+        tags = {"@login"}
 )
 public class LoginTest {
 }
